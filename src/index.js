@@ -45,5 +45,5 @@ app.get("/personagens/:id", (request, response) => {
    
     return response.json(historicoJogadas) 
   })
-app.listen(3333)
+app.listen(process.env.PORT || 3000)
 
