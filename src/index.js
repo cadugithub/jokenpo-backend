@@ -31,7 +31,7 @@ app.get("/personagens/:id", (request, response) => {
     const { id } = request.params;
     const personagem = personagens.find(personagem => personagem.idPersonagem == id)
     if(!personagem){
-      return response.status(404).json({ error: "Repository not found" });
+      return response.status(404).json({ error: "Personagem não encontrado" });
     }
     return response.json(personagem)
   })
