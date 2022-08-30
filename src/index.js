@@ -4,7 +4,7 @@ const cors = require('cors')
 
 const app = express()
 
-app.use(express.json())
+app.use(express.json()) 
 app.use(cors("http://localhost:5173","https://jokenpo-front-end.vercel.app/"))
 const personagens = [
     {idPersonagem:uuidv4(), nome:"Goku", urlImg:"https://cdn.pixabay.com/photo/2020/09/26/07/34/goku-5603384_960_720.png"},
